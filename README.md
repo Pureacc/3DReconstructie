@@ -1,4 +1,4 @@
-# 3DReconstructie
+﻿# 3DReconstructie
 
 <b>PCL installeren:</b>
 
@@ -54,3 +54,9 @@ CMakeLists van project runnen met CMake. Als gewerkt wordt met visual studio moe
 eerst toevoegen in de CMakeLists door het juiste pad bij target_link_libraries toe te voegen (dit is noodzakelijk voor Linux).
 
 Afhankelijk van de gebruikte compiler kunnen op Linux nog wat compilererrors optreden.
+
+Aan het Client-project moet je 3 parameters meegeven: IP-adres van de client, IP-adres van de registrator en naam van de video die je wil versturen (videos worden opgeslaan als "voorbeeld0.pcd" "voorbeeld1.pcd" ... , je moet dus "voorbeeld" opgeven als parameter.
+
+Aan het Cluster-project moet je 1 parameter meegeven: IP-adres van de registrator.
+
+Aan het Registrator-project moet je 1 of meerdere IP-adressen meegeven van cluster servers.
